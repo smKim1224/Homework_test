@@ -15,7 +15,7 @@ class PostController extends Controller
      */
     public function list(request $request)
     {
-        // DB에서 날짜별로 최근게시물 순으로 10개씩 보이도록 list를 만듬
+        // DB에서 날짜별로 최근게시물 순으로 100개씩 보이도록 list를 만듬
         $posts = Post::orderby('created_at', 'desc') -> paginate(100);
         
         return view('list', ['posts'=>$posts]);
