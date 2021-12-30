@@ -27,9 +27,9 @@
     </table>
 
     {{--Paginate--}}
-    {!! $posts->render() !!}
+    {{--{!! $posts->render() !!}  --}}
 <br>
 	<form action="/create" method="GET">
-        <button type="submit">새글쓰기</button>
+        <button type="submit">글쓰기</button>
     </form>
 </center>
